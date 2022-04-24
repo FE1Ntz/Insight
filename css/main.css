@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Monda:wght@700&display=swap');
+
 .navigation-bar{
     display: flex;
     height: 100px;
@@ -70,8 +72,76 @@ a.links{
     width: 50px;
 }
 
-.hide{
+.hide {
     z-index: 1;
+}
+
+.goods{
+    margin-bottom: 50px;
+}
+
+.goods-title{
+    margin-top: 10px;
+    margin-bottom: 25px;
+}
+
+.price{
+    margin-top: 20px;
+}
+
+.footer{
+    height: 100%;
+    background-color: #15151b;
+}
+
+.footer-logo{
+    display: flex;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.footer-logo-background{
+    width: 60px;
+    height: 60px;
+    border-radius: 15px;
+    background-color: #FFFFFF;
+}
+
+.footer-logo-img{
+    margin-top: 7px;
+    margin-left: 6px;
+    height: 45px;
+}
+
+.logo-text{
+    color: #FFFFFF;
+    font-size: 30px;
+    margin-top: 5px;
+    margin-left: 10px;
+    font-family: 'Monda', sans-serif;
+}
+
+
+.copyright-text{
+    margin-top: 10px;
+    margin-left: 20px;
+    color: #999;
+}
+
+.footer-head{
+    margin-top: 25px;
+    margin-left: 20px;
+    color: #FFFFFF;
+    font-size: 30px;
+}
+
+.categories{
+    margin-left: 20px;
+    margin-top: 30px;
+}
+
+.footer-links{
+    color: #999;
 }
 
 
@@ -142,4 +212,33 @@ a.links{
         list-style-type: none;
     }
 
+    .padding-l{
+        padding-left: 100px;
+    }
+
+    .padding-r{
+        padding-right: 100px;
+    }
+}
+
+@media (max-device-width: 768px) {
+
+    .padding-l{
+        padding-left: 0;
+    }
+
+    .padding-r{
+        padding-right: 0;
+    }
+}
+
+@media (max-device-width: 576px) {
+
+    .padding-l{
+        padding-left: 0;
+    }
+
+    .padding-r{
+        padding-right: 0;
+    }
 }
