@@ -39,7 +39,7 @@ header {
     background: #FFF;
     transform: translateX(-100%);
     transition: transform 0.5s;
-    z-index: 1;
+    z-index: 2;
 }
 
 .menu-burger.active {
@@ -71,7 +71,7 @@ a.links{
 }
 
 .hide{
-    z-index: 0;
+    z-index: 1;
 }
 
 
@@ -104,7 +104,7 @@ a.links{
         width: 30px;
         height: 30px;
         position: relative;
-        z-index: 2;
+        z-index: 3;
     }
 
     .menu-btn span {
