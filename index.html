@@ -47,7 +47,7 @@
             <button class="btn btn-secondary">Присоедниться</button>
         </div>
 
-        <div class="col-xs-12 col-lg-6 slider-container text-center">
+        <div class="col-xs-12 col-lg-6 hide text-center">
           <div id="carouselControls" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
               <div class="carousel-item active">
@@ -103,15 +103,6 @@
     menuBtn.addEventListener('click', () => {
       menuBtn.classList.toggle('active');
       menuBurger.classList.toggle('active');
-
-      if(menuMode == false){
-        menuMode = true;
-        carousel.classList.toggle('hide');
-      }
-      else {
-        carousel.classList.toggle('show');
-        return false;
-      }
     })
   </script>
 </body>
