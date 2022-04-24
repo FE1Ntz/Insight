@@ -22,26 +22,29 @@
     </header>
 
     <div class="menu">
-      <nav class="text-center">
+      <nav class="d-flex text-center">
         <li><a class="links" href="https://vk.com/insightbedrock">Мы в Vk</a></li>
         <li><a class="links" href="https://discord.gg/cjERaz9s">Мы в Discord</a></li>
+      </nav>
+    </div>
+
+    <div class="menu-burger">
+      <nav class="text-center">
+        <li class="burger-links"><a class="links" href="https://vk.com/insightbedrock">Мы в Vk</a></li>
+        <li class="burger-links"><a class="links burger-links" href="https://discord.gg/cjERaz9s">Мы в Discord</a></li>
       </nav>
     </div>
   </div>
 
     <div class="container mt-5">
       <div class="row">
-        <div class="col-xs-12 col-lg-6 text-center">
-          <p class="main-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-            when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-            It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
-            It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently
-            with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+        <div class="col-xs-12 col-lg-6 mb-3 mb-lg-0 text-center">
+          <p class="main-text">
+            Insight - ванильный bedrock сервер, полностью построенный на доверии игроков <br>
+            Посетите нашу страну со своей экономикой, системой политики и регулярными ивентами,
+            и погрузитесь в невероятною атмосферу сервера.
           </p>
-          <div class="button">
             <button class="btn btn-secondary">Присоедниться</button>
-          </div>
         </div>
 
         <div class="col-xs-12 col-lg-6 slider-container text-center">
@@ -93,13 +96,13 @@
     </div>
   <script>
     let menuBtn = document.querySelector('.menu-btn');
-    let menu = document.querySelector('.menu');
+    let menuBurger = document.querySelector('.menu-burger');
     let carousel = document.querySelector('.slider-container');
     let menuMode = false;
 
     menuBtn.addEventListener('click', () => {
       menuBtn.classList.toggle('active');
-      menu.classList.toggle('active');
+      menuBurger.classList.toggle('active');
 
       if(menuMode == false){
         menuMode = true;
